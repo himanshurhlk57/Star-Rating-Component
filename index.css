@@ -1,0 +1,46 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: rgb(13, 109, 112);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h3 {
+    text-align: center;
+}
+h3{
+    font-size: 1.4rem;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stars li {
+    list-style: none;
+}
+.star-component {
+    width: 100%;
+    box-shadow: 3px 3px 3px rgb(0 0 0 / 10%), -1px -1px 2px rgb(0 0 0 / 8%);
+}
+.star-component ul {
+    display: flex;
+    justify-content: space-around;
+}
+.star-component ul li {
+    cursor: pointer;
+    font-size: 70px;
+}
+li {
+    color: grey;
+}
+.light-yellow {
+    color: #fdffa9;
+}
+.yellow {
+    color: yellow;
+}
