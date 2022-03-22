@@ -9,20 +9,20 @@ for (let i = 0; i < stars.length; i++) {
 }
 
 function eventHandler(event) {
-    const starRating = this.starRating;
+    const starRatingValue = event.target.starRating;
     if (event.type === 'click') {
-        rating.innerHTML = `You rated this: ${starRating} stars`;
+        rating.innerHTML = `You rated this: ${starRatingValue} stars`;
     }
     stars.forEach((star, index) => {
         if (event.type === 'click') {
-            if (index < starRating) {
+            if (index < starRatingValue) {
                 star.classList.add('yellow');
             } else {
                 star.classList.remove('yellow');
             }
         }
         if (event.type === 'mouseover') {
-            if (index < starRating) {
+            if (index < starRatingValue) {
                 star.classList.add('light-yellow');
             } else {
                 star.classList.remove('light-yellow');
