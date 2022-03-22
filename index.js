@@ -10,9 +10,6 @@ for (let i = 0; i < stars.length; i++) {
 
 function eventHandler(event) {
     const starRatingValue = event.target.starRating;
-    if (event.type === 'click') {
-        rating.innerHTML = `You rated this: ${starRatingValue} stars`;
-    }
     stars.forEach((star, index) => {
         if (event.type === 'click') {
             if (index < starRatingValue) {
@@ -32,4 +29,7 @@ function eventHandler(event) {
             star.classList.remove('light-yellow');
         }
     });
+    if (event.type === 'click') {
+        rating.innerHTML = `You rated this: ${starRatingValue} stars`;
+    }
 }
