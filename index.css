@@ -29,7 +29,7 @@ h3{
 }
 .star-component ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 .star-component ul li {
     cursor: pointer;
